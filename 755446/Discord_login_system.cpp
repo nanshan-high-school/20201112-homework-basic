@@ -48,7 +48,7 @@ int main() {
     } else if (num > 19) {
         wellcome = name + " 跳進了伺服器。";
     } else if (num > 10) {
-        wellcome = "大家憶起歡迎 " + name;
+        wellcome = "大家一起歡迎 " + name;
     } else {
         wellcome = "耶，" + name + "。成功了!";
     }
