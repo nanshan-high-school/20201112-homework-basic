@@ -53,10 +53,10 @@ int main() {
         wellcome = "耶，" + name + "。成功了!";
     }
 
-    for(int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++) {
         if (account_array[i][0] == account) {
             if (account_array[i][1] == password) {
-                status =true;
+                status = true;
             } else {
                 status = false;
             }
