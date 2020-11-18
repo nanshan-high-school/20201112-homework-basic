@@ -48,6 +48,4 @@ int main() {
     } else {
         cout << account << " 你的密碼或帳號打錯了喔!";
     }
-
-
 }
