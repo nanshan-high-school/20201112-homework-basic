@@ -31,5 +31,5 @@ int main() {
 
     srand (time(0));
     num = rand() % 5;
-    cout << users[i][2] << " "  << messages[num];
+    cout << users[i][2] << " " << messages[num];
 }
