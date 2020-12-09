@@ -1,10 +1,23 @@
 #include <iostream>
+#include <ctime>
 using namespace std;
+
 int main() {
-    string set_up[3][2] = {
-                            {"a_ac", "a_pa"},
-                            {"b_ac", "b_pa"},
-                            {"c_ac", "c_pa"}
+    string message[5] = {
+                            {"剛剛滑入了伺服器中"},
+                            {"歡迎加入"},
+                            {"您好"},
+                            {"掉進此伺服器了"},
+                            {"進入了伺服器"}
+                        };
+
+    srand(time(NULL));
+    int k = rand() % 5;
+
+    string set_up[3][3] = {
+                            {"jason950321", "j0988534021", "jason"},
+                            {"a755227", "132048889", "劉宜豪"},
+                            {"jifongisme", "jason950321", "jifong"}
                         };
 
     string user_ac, user_pa;
@@ -21,21 +34,21 @@ int main() {
 
         if (user_ac == set_up[0][0]) {
             if (user_pa == set_up[0][1]) {
-                cout << user_ac << "剛剛滑入了伺服器中";
+                cout << set_up[0][2] << message[k];
             } else {
                 cout << "帳號密碼錯誤，請重新輸入\n";
                 true_false++;
             }
         } else if (user_ac == set_up[1][0]) {
             if (user_pa == set_up[1][1]) {
-                cout << user_ac << "歡迎加入";
+                cout << set_up[1][2] << message[k];
             } else {
                 cout << "帳號密碼錯誤，請重新輸入\n";
                 true_false++;
             }
         } else if (user_ac == set_up[2][0]) {
             if (user_pa == set_up[2][1]) {
-                cout << "您好，" << user_ac;
+                cout << set_up[2][2] << message[k];
             } else {
                 cout << "帳號密碼錯誤，請重新輸入\n";
                 true_false++;
