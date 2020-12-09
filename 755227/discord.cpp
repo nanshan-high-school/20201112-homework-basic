@@ -4,20 +4,14 @@ using namespace std;
 
 int main() {
     string message[5] = {
-                            {"剛剛滑入了伺服器中"},
-                            {"歡迎加入"},
-                            {"您好"},
-                            {"掉進此伺服器了"},
-                            {"進入了伺服器"}
+                            {"剛剛滑入了伺服器中"}, {"歡迎加入"}, {"您好"}, {"掉進此伺服器了"}, {"進入了伺服器"}
                         };
 
     srand(time(NULL));
     int k = rand() % 5;
 
     string set_up[3][3] = {
-                            {"jason950321", "j0988534021", "jason"},
-                            {"a755227", "132048889", "劉宜豪"},
-                            {"jifongisme", "jason950321", "jifong"}
+                            {"jason", "j0988", "jason"}, {"a755", "132", "劉宜豪"}, {"jifong", "jason", "jifong"}
                         };
 
     string user_ac, user_pa;
