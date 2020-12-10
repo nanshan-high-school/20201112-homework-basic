@@ -12,7 +12,7 @@ int main() {
     account[1][1] = "Za_Warudo";
     account[1][2] = "Dio";
     account[3][0] = "I_have_a_dream_which_is _being_a_gangsterstar";
-    account[3][1] = "Gold Experience Requiem";
+    account[3][1] = "Gold_Experience_Requiem";
     account[3][2] = "ジョルノ・ジョバァーナ";
     srand(time(NULL));
     random = rand() % 5;
